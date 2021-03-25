@@ -15,6 +15,20 @@ html {
 body {
     line-height: 1.6;
     font-family: sans-serif;
+    overflow: overlay;
+
+    &::-webkit-scrollbar {
+        width: .7rem;
+        height: 1rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background:rgba(0, 0, 0, 0);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #BDBDBD;
+      }
 }
 
 $color-primary: #55c57a;
